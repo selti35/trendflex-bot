@@ -1,0 +1,16 @@
+{
+  "BITGET": {
+    "API_KEY": "bg_def48d16c23a49f6cec440ab89ae4e08",
+    "API_SECRET": "8e850d67faa10deedfa0655ac355d3632d474ca502412b88810a1be9ecf91487",
+    "PASSPHRASE": "SelimBot123",
+    "SYMBOL": "AVAXUSDT",
+    "ORDER_SIZE": "0.01",
+    "LEVERAGE": "10"
+  },
+  "TELEGRAM": {
+    "TOKEN": "8195476271:AAHU5ylDCm4E1wyi_gwTgrzYyF0Vz8LtW84",
+    "CHAT_ID": "1513025057"
+  },
+  "DRY_RUN": true,
+  "POLL_SECS": 60
+}
