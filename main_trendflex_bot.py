@@ -1,7 +1,8 @@
 ﻿import time
 import requests
 from datetime import datetime
-from trendflex_algo import check_trendflex_signal
+from trendflex_algo import check_trendflex_signal as get_trendflex_signal
+
 
 from config import BITGET, TELEGRAM, DRY_RUN, POLL_SECS
 import hmac, hashlib, json
@@ -76,5 +77,6 @@ if __name__ == "__main__":
             except:
                 pass
         time.sleep(POLL_SECS)
+
 
 
