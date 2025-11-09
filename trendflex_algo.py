@@ -5,7 +5,14 @@ import hashlib
 import base64
 import json
 from datetime import datetime
-from config import API_KEY, API_SECRET, API_PASSPHRASE
+import os
+import requests
+from datetime import datetime
+
+API_KEY = os.getenv("bg_def48d16c23a49f6cec440ab89ae4e08")
+API_SECRET = os.getenv("8e850d67faa10deedfa0655ac355d3632d474ca502412b88810a1be9ecf91487")
+API_PASSPHRASE = os.getenv("SelimBot123")
+
 
 # Bitget ayarları
 BASE_URL = "https://api.bitget.com"
