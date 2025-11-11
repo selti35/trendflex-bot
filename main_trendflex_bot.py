@@ -8,7 +8,10 @@ from config import BITGET, TELEGRAM, DRY_RUN, POLL_SECS
 import hmac, hashlib, json
 import requests
 
-SYMBOL = BITGET["SYMBOL"]
+import os
+
+SYMBOL = os.getenv("BITGET_SYMBOL", "AVAXUSDT")
+
 LEVERAGE = BITGET["LEVERAGE"]
 ORDER_SIZE = BITGET["ORDER_SIZE"]
 
@@ -77,6 +80,7 @@ if __name__ == "__main__":
             except:
                 pass
         time.sleep(POLL_SECS)
+
 
 
 
