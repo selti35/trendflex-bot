@@ -12,8 +12,8 @@ import os
 
 SYMBOL = os.getenv("BITGET_SYMBOL", "AVAXUSDT")
 
-LEVERAGE = BITGET["LEVERAGE"]
-ORDER_SIZE = BITGET["ORDER_SIZE"]
+LEVERAGE = os.getenv("BITGET_LEVERAGE", "10")
+ORDER_SIZE = os.getenv("BITGET_ORDER_SIZE", "0.01")
 
 def send_telegram(text):
     try:
@@ -80,6 +80,7 @@ if __name__ == "__main__":
             except:
                 pass
         time.sleep(POLL_SECS)
+
 
 
 
